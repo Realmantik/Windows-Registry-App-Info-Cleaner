@@ -27,12 +27,12 @@ namespace Registry_Cleaner
         {
             
             try
-            {
+            {               
                 GetInstalledSoftware();                
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                MessageBox.Show(e.Message);
             }
         }
 
